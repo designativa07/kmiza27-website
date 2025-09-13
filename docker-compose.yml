@@ -1,0 +1,6 @@
+services:
+  kmiza27-website:
+    build: .
+    restart: unless-stopped
+    environment:
+      - TZ=America/Sao_Paulo

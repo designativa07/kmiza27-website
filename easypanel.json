@@ -1,0 +1,29 @@
+{
+  "name": "kmiza27-website",
+  "type": "static",
+  "build": {
+    "command": "",
+    "directory": "/"
+  },
+  "deploy": {
+    "directory": "/",
+    "clean": true
+  },
+  "headers": {
+    "/*": {
+      "Cache-Control": "public, max-age=31536000"
+    },
+    "/*.html": {
+      "Cache-Control": "public, max-age=0, must-revalidate"
+    },
+    "/*.css": {
+      "Cache-Control": "public, max-age=31536000"
+    },
+    "/*.js": {
+      "Cache-Control": "public, max-age=31536000"
+    }
+  },
+  "redirects": {
+    "/index.html": "/"
+  }
+}
